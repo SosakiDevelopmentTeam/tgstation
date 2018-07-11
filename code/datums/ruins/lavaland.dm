@@ -215,3 +215,9 @@
 	suffix = "lavaland_surface_random_ripley.dmm"
 	allow_duplicates = FALSE
 	cost = 5
+
+/datum/map_template/ruin/lavaland/doom_slayer
+	name = "Doom Slayer Shuttle"
+	id = "ds_shuttle"
+	description = "Shuttle with Doom Slayer inside. Prepare for hell."
+	suffix = "doom_slayer_lavaland.dmm"

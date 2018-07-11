@@ -2629,6 +2629,8 @@
 #include "code\modules\zombie\items.dm"
 #include "code\modules\zombie\organs.dm"
 #include "code\shitcode\webhook.dm"
+#include "code\shitcode\ClickerOfThings\doom_slayer_lavaland\doom_slayer.dm"
+#include "code\shitcode\ClickerOfThings\shitspawn_deck\shitspawn_deck.dm"
 #include "code\shitcode\fogmann\donations.dm"
 #include "code\shitcode\fogmann\fogmann.dm"
 #include "code\shitcode\fogmann\funmote.dm"

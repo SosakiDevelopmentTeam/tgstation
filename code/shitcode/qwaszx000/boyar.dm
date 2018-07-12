@@ -35,3 +35,9 @@
 	desc = "Oh no! Its TRUE boyar pill!!!"
 	item = /obj/item/reagent_containers/pill/boyar_t
 	cost = 2
+	
+/datum/chemical_reaction/boyar
+	name = "Boyar"
+	id = "boyar"
+	results = list("boyar" = 10)
+	required_reagents = list("vodka" = 10, "berryjuice" = 1)

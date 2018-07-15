@@ -35,7 +35,7 @@
 	desc = "Oh no! Its TRUE boyar pill!!!"
 	item = /obj/item/reagent_containers/pill/boyar_t
 	cost = 2
-	
+
 /datum/chemical_reaction/boyar
 	name = "Boyar"
 	id = "boyar"

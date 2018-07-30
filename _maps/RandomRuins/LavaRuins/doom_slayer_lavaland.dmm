@@ -1,0 +1,40 @@
+"a" = (/turf/closed/mineral/volcanic/lava_land_surface,/area/lavaland/surface/outdoors)
+"b" = (/turf/closed/wall/rust,/area/ruin/powered)
+"c" = (/turf/open/floor/pod/dark,/area/ruin/powered)
+"d" = (/obj/item/storage/box/lethalshot,/turf/open/floor/pod/dark,/area/ruin/powered)
+"e" = (/obj/effect/mob_spawn/human/doom_slayer,/turf/open/floor/pod/dark,/area/ruin/powered)
+"f" = (/obj/effect/decal/cleanable/blood/gibs/limb,/turf/open/floor/pod/dark,/area/ruin/powered)
+"g" = (/obj/effect/decal/cleanable/blood,/turf/open/floor/pod/dark,/area/ruin/powered)
+"h" = (/obj/effect/decal/cleanable/blood/gibs/torso,/turf/open/floor/pod/dark,/area/ruin/powered)
+"i" = (/obj/machinery/door/airlock/public,/turf/open/floor/pod/dark,/area/ruin/powered)
+"j" = (/obj/effect/decal/cleanable/blood/gibs/down,/turf/open/floor/pod/dark,/area/ruin/powered)
+"k" = (/obj/effect/decal/cleanable/blood/gibs/body,/turf/open/floor/pod/dark,/area/ruin/powered)
+"l" = (/obj/item/gun/energy/kinetic_accelerator,/turf/open/floor/pod/dark,/area/ruin/powered)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaaa
+abbbbbbbbbbbbbbbbbbbbba
+abcdddcccccccccccccdcba
+abeccccfccggggfbcccdcba
+abdccgfhbggggffbcccccba
+abbbbbbbbbbbbbbbbbcccba
+abcccdcccbccccdbddcccia
+abcccddccbcffdcbccgglba
+abcccbbbbbcffccbccggcba
+abcjjcddcbcffcdbccggcba
+abcjjcddcbcffccccccccba
+abcccbbbbbccccckkkkccba
+abccccccdcccccckkkkccba
+abcdggggddbbbbbbbccccba
+abcdggggddbcccddcccccba
+abcbbbbbbbbccggggccccba
+abccbddcccbccggggccccba
+abccbddcccbbbbbbbccccba
+abccbccjccbccccccccccba
+abccbbbbbcbccggccdddcba
+abccccddcccccccccdddcba
+abbbbbbbbbbbbbbbbbbbbba
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaa
+"}

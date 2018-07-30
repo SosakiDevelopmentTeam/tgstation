@@ -1,3 +1,4 @@
+
 .dockerignore
 .editorconfig
 .travis.yml
@@ -14,7 +15,6 @@ TGS3.json
 .git/objects
 .git/refs
 .vs*
-tools
 cfg
 data
 SQL
@@ -26,4 +26,7 @@ tgstation.lk
 tgstation.dyn.rsc
 libmariadb.dll
 rust_g.dll
+BSQL.dll
+appveyor.yml
 Dockerfile
+

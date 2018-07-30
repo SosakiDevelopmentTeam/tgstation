@@ -1,1 +1,103 @@
-<style> .motdnew { background: #e0e0e0; font-family: sans-serif; padding: 5px; margin: -8px } .motdnew a { color: #4f4f4f } .motdnew h1, .motdnew h2, .motdnew h3, .motdnew h4, .motdnew h5, .motdnew h6 { color: #9f9f9f; font-family: sans-serif } .motdnew h1 { background: #e0e0e0; padding-left: 5px; margin: 0 } .motdadv { background: #eaeaea; color: #bd3333; padding: 5px; border-left: 5px solid #f0b0b0; border-right: 5px solid #f0b0b0 } .motdjob { background: #eaeaea; color: #bd33bd; padding: 5px; border-left: 5px solid #f0b0f0; border-right: 5px solid #f0b0f0 } .motdstart { background: #eaeaea; color: #33bd33; padding: 5px; border-left: 5px solid #b0f0b0; border-right: 5px solid #b0f0b0 } .motdbug { background: #eaeaea; color: #6a6a6a; padding: 5px; border-left: 5px solid #b0b0b0; border-right: 5px solid #b0b0b0 }</style><div class="motdnew"> <h1>Welcome to the Animus Station - Yellow Shelter!</h1> <p class="motdadv"><strong>Надоели лаги после каждого взрыва? DDoS'еры опять набежали на Анимус, не давая тебе играть вечером? Хочется хост, который не упадет даже от двадцати лимиток? Тогда ты можешь помочь нам! Помоги нам продлить новый хост на целый год игры без лагов! Ты можешь скинуться на это дело, просто прислав средства сюда: <a href="https://discord.gg/6cAujPY">https://discord.gg/6cAujPY</a>Если каждый из нас скинется по 300 рублей, это будет уже очень существенно.</strong></p> <!--<p class="motdjob"><strong>Эй, космонавт! </strong>Есть навыки программирования, создания спрайтов? А может быть, обработки звуков, или даже рисования полноценных артов? Ты можешь помочь своему серверу стать лучше! Узнай подробности, обратившись в ПМ на форуме по <a href="https://discord.gg/6cAujPY">этой ссылке</a>, или через конференцию в <a href="https://discord.gg/6cAujPY">Дискорде</a>, обратившись в личку к Moonmandoom.</p>--> <p class="motdstart"><i>Если вы только знакомитесь с миром SS13, вам рекомендовано ознакомиться с <a href="http://wiki.ss13.ru/index.php?title=Rules">правилами</a> нашего сервера. Всевозможные руководства и описания профессий персонажей вы можете найти на нашей <a href="http://wiki.ss13.ru/">Вики</a>. При затруднениях вы можете обратиться к администраторам (нажав F1).</i></p> <center><b>Полезные ссылки: <a href="http://forum.ss13.ru">Форум</a> <a href="http://wiki.ss13.ru">Вики</a> <a href="https://discord.gg/6cAujPY">Дискорд-конфа</a> <a href="https://github.com/SosakiDevelopmentTeam/tgstation/issues">Багтрекер</a> <a href="https://github.com/SosakiDevelopmentTeam/tgstation">Репозиторий</a> <a href="https://discord.gg/p9x5msF">Дискорд</a></b></center> </p> 
+<style>
+    .motdnew {
+        background: #090909;
+		color: #fff;
+        font-family: sans-serif;
+        padding: 5px;
+        margin: -8px;
+		box-shadow: 0px 5px 20px #000;
+    }
+
+    .motdnew a {
+        color: #9f9f9f
+    }
+
+    .motdnew h1,
+    .motdnew h2,
+    .motdnew h3,
+    .motdnew h4,
+    .motdnew h5,
+    .motdnew h6 {
+        color: #090909;
+        font-family: sans-serif
+    }
+
+    .motdnew h1 {
+        background: #090909;
+		color: #fcff7b !important;
+        padding-left: 5px;
+        margin: 0
+    }
+
+    .motdadv {
+        background: #111;
+        color: #ff4747;
+        padding: 5px;
+        border-left: 5px solid #f00;
+        border-right: 5px solid #f00;
+    }
+
+    .motdjob {
+        background: #eaeaea;
+        color: #bd33bd;
+        padding: 5px;
+        border-left: 5px solid #f0b0f0;
+        border-right: 5px solid #f0b0f0
+    }
+
+    .motdstart {
+        background: #111;
+        color: #33bd33;
+        padding: 5px;
+        border-left: 5px solid #0f0;
+        border-right: 5px solid #0f0;
+    }
+
+    .motdbug {
+        background: #111;
+        color: #b9b9b9;
+        padding: 5px;
+        border-left: 5px solid #b0b0b0;
+        border-right: 5px solid #b0b0b0
+    }
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+</style>
+<script>
+function aaa() {
+	var b=[];
+	b[0]='Alexs410: Does yellow dream of ERP system?';
+	b[1]='Космонавты настолько тупые, что могут спорить о чем угодно.';
+	b[2]='Кто слил логи!?';
+	b[3]='Тут могла бы быть ваша реклама.';
+	b[4]='@Y @Test Pedal @##Main## @#DEV# привет';
+	b[5]='Xupypr [KZ: НУЖНО БОЛЬШЕ ПЛАСТАЛИ';
+	b[6]='Xupypr [KZ: Материя наносит очередной удар</br>Xupypr [KZ: На этот раз она скушала аж трех человек';
+	b[7]='}|{оnНbIu_DоKTоР: сингу надо кормить инженерами</br>}|{оnНbIu_DоKTоР: они в 5 раз питательнее</br>}|{оnНbIu_DоKTоР: а кловуны ето фастфуд';
+	b[8]='}|{оnНbIu_DоKTоР: ЯБЛОЧКО ОТ ЯБЛОНИ НЕ ДОЛЕКО ЯБНУЛОСЬ';
+	var i=Math.floor(Math.random()*b.length);
+	document.write( b[i] );
+}
+</script>
+<div class="motdnew">
+    <h1>Welcome to the Yellow Shelter!</h1>
+    <p class="motdadv"><strong><script>aaa()</script></strong></p>
+    <p class="motdstart"><i>Если вы только знакомитесь с миром SS13, вам рекомендовано ознакомиться с <a href="http://wiki.ss13.ru/index.php?title=Rules">правилами</a> нашего сервера. Всевозможные руководства и описания профессий персонажей вы можете найти на нашей <a href="http://wiki.ss13.ru/">Вики</a>. При затруднениях вы можете обратиться к администраторам (нажав F1).</i></p>
+    <center><b>Полезные ссылки: <a href="http://wiki.ss13.ru">Вики</a> <a href="http://wiki.ss13.ru">ТГ Вики</a> <a href="https://github.com/SosakiDevelopmentTeam/tgstation/issues">Багтрекер</a> <a href="https://github.com/SosakiDevelopmentTeam/tgstation">Репозиторий</a> <a href="https://discord.gg/p9x5msF">Дискорд</a></b></center>
+    </p>
+    <p class="motdbug">Ах да, космонавтик! Теперь ты можешь не выходя из игры сообщить нашим кодерам о каком-либо баге, или что-нибудь предложить. Сделать это ты можешь нажав на кнопочку <i>Report a bug, Suggestion</i> во вкладке <i>OOC</i>. Потом наши кодеры это прочитают и что-нибудь с этим сделают.</p>
+</div>
+<style>.motdnew{background: #090909 !important;color: #fff !important; font-family: sans-serif !important; padding: 5px; margin: -8px !important;box-shadow: 0px 5px 20px #000;}.motdnew a{color: #9f9f9f !important}.motdnew h1, .motdnew h2, .motdnew h3, .motdnew h4, .motdnew h5, .motdnew h6{color: #090909 !important; font-family: sans-serif !important}.motdnew h1{background: #090909 !important;color: #fcff7b !important; padding-left: 5px; margin: 0}.motdadv{background: #111 !important; color: #ff4747 !important; padding: 5px; border-left: 5px solid #f00; border-right: 5px solid #f00;}.motdjob{background: #eaeaea !important; color: #bd33bd !important; padding: 5px; border-left: 5px solid #f0b0f0; border-right: 5px solid #f0b0f0}.motdstart{background: #111 !important; color: #33bd33 !important; padding: 5px; border-left: 5px solid #0f0; border-right: 5px solid #0f0;}.motdbug{background: #111 !important; color: #b9b9b9 !important; padding: 5px; border-left: 5px solid #b0b0b0; border-right: 5px solid #b0b0b0}::-webkit-scrollbar{width: 5px;}::-webkit-scrollbar-track{background: #fff;}::-webkit-scrollbar-thumb{background: #000;}::-webkit-scrollbar-thumb:hover{background: #555;}</style><script>function aaa(){var b=[];b[0]='Alexs410: Does yellow dream of ERP system?';b[1]='Космонавты настолько тупые, что могут спорить о чем угодно.';b[2]='Кто слил логи!?';b[3]='Тут могла бы быть ваша реклама.';b[4]='@Y @Test Pedal @##Main## @#DEV# привет';b[5]='Xupypr [KZ: НУЖНО БОЛЬШЕ ПЛАСТАЛИ';b[6]='Xupypr [KZ: Материя наносит очередной удар</br>Xupypr [KZ: На этот раз она скушала аж трех человек';b[7]='}|{оnНbIu_DоKTоР: сингу надо кормить инженерами</br>}|{оnНbIu_DоKTоР: они в 5 раз питательнее</br>}|{оnНbIu_DоKTоР: а кловуны ето фастфуд';b[8]='}|{оnНbIu_DоKTоР: ЯБЛОЧКО ОТ ЯБЛОНИ НЕ ДОЛЕКО ЯБНУЛОСЬ';var i=Math.floor(Math.random()*b.length);document.write( b[i] );}</script><div class="motdnew"> <h1>Welcome to the Animus Station - Yellow Shelter!</h1> <p class="motdadv"><strong><script>aaa()</script></strong></p><p class="motdstart"><i>Если вы только знакомитесь с миром SS13, вам рекомендовано ознакомиться с <a href="http://wiki.ss13.ru/index.php?title=Rules">правилами</a> нашего сервера. Всевозможные руководства и описания профессий персонажей вы можете найти на нашей <a href="http://wiki.ss13.ru/">Вики</a>. При затруднениях вы можете обратиться к администраторам (нажав F1).</i></p><center><b>Полезные ссылки: <a href="http://forum.ss13.ru">Форум</a> <a href="http://wiki.ss13.ru">Вики</a> <a href="https://github.com/animusdev/whiteTG/issues">Багтрекер</a> <a href="https://github.com/animusdev/whiteTG">Репозиторий</a> <a href="https://discord.gg/p9x5msF">Дискорд</a></b></center> </p><p class="motdbug">Ах да, космонавтик! Теперь ты можешь не выходя из игры сообщить нашим кодерам о каком-либо баге, или что-нибудь предложить. Сделать это ты можешь нажав на кнопочку <i>Report a bug, Suggestion</i> во вкладке <i>OOC</i>. Потом наши кодеры это прочитают и что-нибудь с этим сделают.</p></div>

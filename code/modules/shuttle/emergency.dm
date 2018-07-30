@@ -245,7 +245,7 @@
 
 /obj/docking_port/mobile/emergency/proc/is_hijacked()
 	var/has_people = FALSE
-
+	var/hijacker_present = FALSE
 	for(var/mob/living/player in GLOB.player_list)
 		if(player.mind)
 			if(player.stat != DEAD)
@@ -258,10 +258,23 @@
 				if(shuttle_areas[get_area(player)])
 					has_people = TRUE
 					var/location = get_turf(player.mind.current)
+					//Non-antag present. Can't hijack.
 					if(!(player.mind.has_antag_datum(/datum/antagonist)) && !istype(location, /turf/open/floor/plasteel/shuttle/red) && !istype(location, /turf/open/floor/mineral/plastitanium/brig))
 						return FALSE
+					//Antag present, doesn't stop but let's see if we actually want to hijack
+					var/prevent = FALSE
+					for(var/datum/antagonist/A in player.mind.antag_datums)
+						if(A.can_hijack == HIJACK_HIJACKER)
+							hijacker_present = TRUE
+							prevent = FALSE
+							break //If we have both prevent and hijacker antags assume we want to hijack.
+						else if(A.can_hijack == HIJACK_PREVENT)
+							prevent = TRUE
+					if(prevent)
+						return FALSE
 
-	return has_people
+	
+	return has_people && hijacker_present
 
 /obj/docking_port/mobile/emergency/proc/ShuttleDBStuff()
 	set waitfor = FALSE
@@ -298,6 +311,7 @@
 					setTimer(20)
 					return
 				mode = SHUTTLE_DOCKED
+				webhook_send_roundstatus("shuttle docked")
 				setTimer(SSshuttle.emergencyDockTime)
 				send2irc("Server", "The Emergency Shuttle has docked with the station.")
 				priority_announce("The Emergency Shuttle has docked with the station. You have [timeLeft(600)] minutes to board the Emergency Shuttle.", null, 'sound/ai/shuttledock.ogg', "Priority")
@@ -352,6 +366,7 @@
 				launch_status = ENDGAME_LAUNCHED
 				setTimer(SSshuttle.emergencyEscapeTime * engine_coeff)
 				priority_announce("The Emergency Shuttle has left the station. Estimate [timeLeft(600)] minutes until the shuttle docks at Central Command.", null, null, "Priority")
+				webhook_send_roundstatus("shuttle left")
 
 		if(SHUTTLE_STRANDED)
 			SSshuttle.checkHostileEnvironment()
@@ -395,6 +410,7 @@
 				dock_id(destination_dock)
 				mode = SHUTTLE_ENDGAME
 				timer = 0
+				webhook_send_roundstatus("shuttle escaped")
 
 /obj/docking_port/mobile/emergency/transit_failure()
 	..()
@@ -427,26 +443,6 @@
 		to_chat(usr, "<span class='warning'>Escape pods will only launch during \"Code Red\" security alert.</span>")
 		return TRUE
 
-/obj/docking_port/mobile/pod/Initialize()
-	. = ..()
-	var/static/i = 1
-	if(id == initial(id))
-		id = "[initial(id)][i]"
-	if(name == initial(name))
-		name = "[initial(name)] [i]"
-
-	for(var/k in shuttle_areas)
-		var/area/place = k
-		for(var/obj/machinery/computer/shuttle/pod/pod_comp in place)
-			if(pod_comp.shuttleId == initial(pod_comp.shuttleId))
-				pod_comp.shuttleId = id
-			if(pod_comp.possible_destinations == initial(pod_comp.possible_destinations))
-				pod_comp.possible_destinations = "pod_lavaland[i]"
-
-	i++
-
-
-
 /obj/docking_port/mobile/pod/cancel()
 	return
 
@@ -469,6 +465,11 @@
 		return
 	obj_flags |= EMAGGED
 	to_chat(user, "<span class='warning'>You fry the pod's alert level checking system.</span>")
+
+/obj/machinery/computer/shuttle/pod/connect_to_shuttle(obj/docking_port/mobile/port, obj/docking_port/stationary/dock, idnum, override=FALSE)
+	. = ..()
+	if(possible_destinations == initial(possible_destinations) || override)
+		possible_destinations = "pod_lavaland[idnum]"
 
 /obj/docking_port/stationary/random
 	name = "escape pod"

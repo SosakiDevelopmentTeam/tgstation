@@ -4,7 +4,8 @@
 /data/**/*
 
 #Ignore byond config folder.
-config/dbconfig.txt
+cfg/**/*
+config/**/*
 
 
 
@@ -201,3 +202,8 @@ tools/MapAtmosFixer/MapAtmosFixer/bin/*
 
 #GitHub Atom
 .atom-build.json
+config/game_options.txt
+
+#extra map stuff
+/_maps/**/backup/
+/_maps/templates.dm

@@ -14,6 +14,7 @@
 			var/mob/living/carbon/human/H = user
 			if(H.dna.species.id == "human")
 				message = "farts so hard!"
+				H.ex_act(EXPLODE_LIGHT)
 				if(user.key == "Brony_uraj")
 					playsound(H, 'code/shitcode/fogmann/fart.ogg', 50, 1)
 					for(var/obj/structure/window/W in range(1))

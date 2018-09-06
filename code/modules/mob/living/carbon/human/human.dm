@@ -237,7 +237,31 @@
 			if(slot in check_obscured_slots())
 				to_chat(usr, "<span class='warning'>You can't reach that! Something is covering it.</span>")
 				return
-
+				
+		if(href_list["erp"])
+			var/erp_do = text2num(href_list["erp"])
+			switch(erp_do)
+				if(0)
+					to_chat(usr, "<span class='warning'>You fack [src] in mounth.</span>")//src - target; usr - source
+					to_chat(src, "<span class='warning'>You facked by [usr] in mounth.</span>")
+				if(1)
+					to_chat(usr, "<span class='warning'>You fack [src] in ass.</span>")//src - target; usr - source
+					to_chat(src, "<span class='warning'>You facked by [usr] in ass.</span>")
+				if(2)
+					to_chat(usr, "<span class='warning'>You fack [src] in pussy.</span>")//src - target; usr - source
+					to_chat(src, "<span class='warning'>You facked by [usr] in pussy.</span>")
+				if(3)
+					to_chat(usr, "<span class='warning'>You suck [src]`s dick.</span>")//src - target; usr - source
+					to_chat(src, "<span class='warning'>[usr] sucks your dick.</span>")
+				if(4)
+					to_chat(usr, "<span class='warning'>You jump on [src]`s dick with you ass.</span>")//src - target; usr - source
+					to_chat(src, "<span class='warning'>[usr] jumps on your dick with his ass.</span>")
+				if(5)
+					to_chat(usr, "<span class='warning'>You jump on [src]`s dick with you vagina.</span>")//src - target; usr - source
+					to_chat(src, "<span class='warning'>[usr] jumps on your dick with his vagina.</span>")
+				if(6)
+					to_chat(usr, "<span class='warning'>You masturbate.</span>")
+					
 		if(href_list["pockets"])
 			var/pocket_side = href_list["pockets"]
 			var/pocket_id = (pocket_side == "right" ? SLOT_R_STORE : SLOT_L_STORE)

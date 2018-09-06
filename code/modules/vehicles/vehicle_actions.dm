@@ -160,7 +160,7 @@
 	desc = "Press one of those colorful buttons on your display panel!."
 	button_icon_state = "car_rtd"
 
-/datum/action/vehicle/sealed/RollTheDice/Trigger()
+/*/datum/action/vehicle/sealed/RollTheDice/Trigger()
 	if(istype(vehicle_entered_target, /obj/vehicle/sealed/car/clowncar))
 		var/obj/vehicle/sealed/car/clowncar/C = vehicle_entered_target
-		C.RollTheDice(owner)
+		C.RollTheDice(owner)*/

@@ -201,7 +201,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	cost = 10
 	surplus = 40
 	include_modes = list(/datum/game_mode/nuclear)
-	
+
 /datum/uplink_item/dangerous/carbine
 	name = "M-90gl Carbine"
 	desc = "A fully-loaded, specialized three-round burst carbine that fires 5.56mm ammunition from a 30 round magazine \
@@ -526,7 +526,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	item = /obj/item/storage/backpack/duffelbag/syndie/ammo/smg
 	cost = 20
 	include_modes = list(/datum/game_mode/nuclear)
-	
+
 /datum/uplink_item/ammo/carbine
 	name = "5.56mm Toploader Magazine"
 	desc = "An additional 30-round 5.56mm magazine; suitable for use with the M-90gl carbine. \
@@ -534,7 +534,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	item = /obj/item/ammo_box/magazine/m556
 	cost = 4
 	include_modes = list(/datum/game_mode/nuclear)
-	
+
 /datum/uplink_item/ammo/a40mm
 	name = "40mm Grenade"
 	desc = "A 40mm HE grenade for use with the M-90gl's under-barrel grenade launcher. \
@@ -1472,7 +1472,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	cost = 15
 	restricted_roles = list("Clown")
 
-/datum/uplink_item/role_restricted/clowncar
+/*/datum/uplink_item/role_restricted/clowncar
 	name = "Clown Car"
 	desc = "The Clown Car is the ultimate transportation method for any worthy clown! \
 			Simply insert your bikehorn and get in, and get ready to have the funniest ride of your life! \
@@ -1481,7 +1481,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 			are very sensetive. Now with our included lube defense mechanism which will protect you against any angry shitcurity!"
 	item = /obj/vehicle/sealed/car/clowncar
 	cost = 15
-	restricted_roles = list("Clown")
+	restricted_roles = list("Clown")*/
 
 // Pointless
 /datum/uplink_item/badass

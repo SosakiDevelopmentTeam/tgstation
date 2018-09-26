@@ -6,6 +6,7 @@ mob/living/carbon/alien/humanoid/royal/queen/tamed
 	for(var/X in src.internal_organs)
 		var/obj/item/organ/I = X
 		if(istype(I,/obj/item/organ/alien/eggsac))
+			I.Remove(src)
 			qdel(I)
 	grant_language(/datum/language/common)
 	name = "Smarty"

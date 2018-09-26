@@ -76,6 +76,8 @@ mob/living/carbon/alien/humanoid/royal/queen/tamed
 	req_access = list(20)
 
 /obj/structure/closet/crate/critter/xenoqueen/full
+	locked = 1
 
 /obj/structure/closet/crate/critter/xenoqueen/full/Initialize()
+	..()
 	contents += new /mob/living/carbon/alien/humanoid/royal/queen/tamed

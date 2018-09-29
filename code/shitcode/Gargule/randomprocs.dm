@@ -39,7 +39,7 @@ mob/living/carbon/human/species/lizard/Initialize()
 		src.dna.features["tail_lizard"] = "Smooth"
 		update_body()
 
-/obj/item/slapper/Initialize()
+/obj/item/slapper/Initialize() //nemnogo zabagovano
 	var/mob/living/carbon/human/H = loc
 	if(istype(H))
 		var/obj/item/slapper_mark_two/S = new /obj/item/slapper_mark_two(get_turf(H))
@@ -49,7 +49,7 @@ mob/living/carbon/human/species/lizard/Initialize()
 		del(src)
 	..()
 
-/mob/living/carbon/human/can_see_reagents()
+/mob/living/carbon/human/can_see_reagents()//to do, create NORMAL system for this /tg/ shit
 	.=..()
 	if(src.internal_organs_slot[ORGAN_SLOT_HUD])
 		var/obj/item/organ/cyberimp/eyes/hud/science/H = src.internal_organs_slot[ORGAN_SLOT_HUD]
@@ -75,7 +75,7 @@ mob/living/carbon/human/species/lizard/Initialize()
 
 /obj/item/clothing/mask/gas/sechailer/equipped(mob/living/carbon/human/user, slot)
 	..()
-	if(slot == 2)
+	if(slot == 2 && isstrictlytype(src,/obj/item/clothing/mask/gas/sechailer))
 		playsound(user,'code/shitcode/Gargule/sounds/shitMask.ogg',75,1)
 
 /obj/item/nullrod/claymore/attack_self(mob/user)

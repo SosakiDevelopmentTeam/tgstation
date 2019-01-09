@@ -90,7 +90,7 @@
 
 /obj/item/organ/heart/light/on_life()
 	. = ..()
-	if(is_species(owner, /datum/species/pod)) //extra healing for podmans
+	if(ispodperson(owner)) //extra healing for podmans
 		owner.nutrition += 5
 		owner.heal_overall_damage(power,power,power/2)
 		owner.adjustToxLoss(-power)

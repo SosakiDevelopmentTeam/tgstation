@@ -19,7 +19,7 @@ Arrow&bow
 /obj/item/reagent_containers/syringe/arrow/update_icon()
 	cut_overlays()
 
-/obj/item/projectile/bullet/dart/syringe/bow//Arrow 
+/obj/item/projectile/bullet/dart/syringe/bow//Arrow
 	name = "arrow"
 	icon_state = "bolter"
 	damage = 10
@@ -43,10 +43,10 @@ Arrow&bow
 
 /obj/item/gun/syringe/bow/Initialize()
 	. = ..()
-	
+
 	chambered = new /obj/item/ammo_casing/syringegun/bow(src)
-	
-/obj/item/gun/syringe/attackby(obj/item/A, mob/user, params, show_msg = TRUE)
+
+/obj/item/gun/syringe/bow/attackby(obj/item/A, mob/user, params, show_msg = TRUE)
 	if(istype(A, /obj/item/reagent_containers/syringe/arrow))
 		if(syringes.len < max_syringes)
 			if(!user.transferItemToLoc(A, src))
@@ -66,7 +66,7 @@ Arrow&bow
 	time = 100
 	category= CAT_WEAPONRY
 	subcategory = CAT_WEAPON
-	
+
 /datum/crafting_recipe/arrow_h
 	name = "Arrow"
 	result = /obj/item/reagent_containers/syringe/arrow
